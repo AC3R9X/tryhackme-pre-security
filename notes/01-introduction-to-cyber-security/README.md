@@ -77,3 +77,27 @@ Cybersecurity knowledge must be used responsibly.
 
 - [TryHackMe](https://tryhackme.com/)
 - [Main repository README](../../README.md)
+
+- ## 💻 Commands & Lab Examples / Comandos e Exemplos de Laboratório
+
+> Commands are documented for educational purposes and must only be used in authorized labs or systems where permission was granted.  
+> Os comandos são documentados para fins educacionais e devem ser usados somente em laboratórios autorizados ou sistemas com permissão.
+
+### Gobuster — Directory Enumeration
+
+**Purpose / Finalidade:**  
+Gobuster can be used to identify publicly accessible directories or pages in an authorized web application test.
+
+O Gobuster pode ser utilizado para identificar diretórios ou páginas publicamente acessíveis em um teste autorizado de aplicação web.
+
+```bash
+gobuster dir -u http://TARGET -w /path/to/wordlist.txt
+```
+
+| Option | Meaning / Significado |
+|---|---|
+| `dir` | Directory enumeration mode / Modo de enumeração de diretórios |
+| `-u` | Target URL / URL do alvo autorizado |
+| `-w` | Path to the wordlist / Caminho para a lista de palavras |
+
+> No lab targets, flags, discovered paths, credentials, or answers are stored in this repository.
