@@ -130,6 +130,97 @@ Operating system knowledge is essential in cybersecurity because it helps with:
 
 ---
 
+
+
+
+## 💻 CLI Commands & Examples / Comandos e Exemplos de CLI
+
+> The commands below are documented for study and should be used only on personal systems or authorized labs.  
+> Os comandos abaixo são documentados para estudo e devem ser usados somente em sistemas próprios ou laboratórios autorizados.
+
+### 🐧 Linux CLI Basics
+
+| Command | Purpose / Finalidade |
+|---|---|
+| `pwd` | Shows the current working directory / Mostra o diretório atual |
+| `ls` | Lists files and directories / Lista arquivos e diretórios |
+| `ls -la` | Lists all files, including hidden files / Lista inclusive arquivos ocultos |
+| `cd <directory>` | Changes directory / Altera o diretório atual |
+| `cd ..` | Moves one directory back / Volta um diretório |
+| `cat <file>` | Displays the content of a text file / Exibe o conteúdo de um arquivo |
+| `whoami` | Shows the current user / Mostra o usuário atual |
+| `hostname` | Shows the machine name / Mostra o nome da máquina |
+| `uname -a` | Shows system and kernel information / Mostra informações do sistema e kernel |
+| `df -h` | Shows disk usage in a readable format / Mostra uso de disco de forma legível |
+
+```bash
+# Check the current directory
+pwd
+
+# List files, including hidden files
+ls -la
+
+# Enter a directory and read a text file
+cd /path/to/directory
+cat example.txt
+
+# Check user, host, system, and disk information
+whoami
+hostname
+uname -a
+df -h
+```
+
+---
+
+### 🪟 Windows CLI Basics
+
+| Command | Purpose / Finalidade |
+|---|---|
+| `cd` | Shows or changes the current directory / Mostra ou altera o diretório |
+| `dir` | Lists files and directories / Lista arquivos e diretórios |
+| `dir /a` | Lists all files, including hidden files / Lista inclusive arquivos ocultos |
+| `cd ..` | Moves one directory back / Volta um diretório |
+| `type <file>` | Displays the content of a text file / Exibe o conteúdo de um arquivo |
+| `whoami` | Shows the current user / Mostra o usuário atual |
+| `hostname` | Shows the computer name / Mostra o nome do computador |
+| `systeminfo` | Displays operating system and hardware information / Exibe informações do sistema |
+| `ipconfig` | Displays basic network configuration / Exibe configuração de rede básica |
+| `help` | Displays available CMD commands / Exibe ajuda do CMD |
+
+```cmd
+:: Show the current directory and list all files
+cd
+dir /a
+
+:: Move to a directory and display a text file
+cd C:\path\to\directory
+type example.txt
+
+:: Gather basic system information
+whoami
+hostname
+systeminfo
+ipconfig
+```
+
+---
+
+### 🔁 Linux and Windows Comparison / Comparação
+
+| Task / Tarefa | Linux | Windows |
+|---|---|---|
+| Current directory / Diretório atual | `pwd` | `cd` |
+| List files / Listar arquivos | `ls` | `dir` |
+| Show hidden files / Exibir ocultos | `ls -la` | `dir /a` |
+| Read a text file / Ler arquivo | `cat example.txt` | `type example.txt` |
+| Current user / Usuário atual | `whoami` | `whoami` |
+| Machine name / Nome da máquina | `hostname` | `hostname` |
+| System information / Informações do sistema | `uname -a` | `systeminfo` |
+| Network information / Informações de rede | `ip addr` | `ipconfig` |
+
+> Examples use generic paths and files. No TryHackMe flags, credentials, machine IPs, target names, or challenge answers are included.
+
 ## 🔗 References / Referências
 
 - [TryHackMe](https://tryhackme.com/)
